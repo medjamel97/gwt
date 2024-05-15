@@ -1,4 +1,4 @@
-package com.superveloce.gwt.gwt
+package com.superveloce.gwt
 
 import io.flutter.embedding.android.FlutterActivity
 

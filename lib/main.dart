@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:gwt/view/register_view.dart';
 
 void main() {
   runApp(const MyApp());
 }
+
+GlobalKey<NavigatorState> mainNavigatorKey = GlobalKey<NavigatorState>();
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -10,11 +13,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Gym Weight Tracker'),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      navigatorKey: mainNavigatorKey,
+      home: const RegisterView(),
     );
   }
 }
